@@ -74,3 +74,18 @@ prob.eggs <- function(N) {
 }
 
 prob.eggs(num_trials)
+
+#task09
+
+exp.exam <- function() {
+  ans <- c(0, 0, 0, 1) #incorrect - 0, correct - 1
+  quest <- sample(ans, 10, replace=TRUE)
+  sum(quest)
+}
+
+prob.exam <- function(N) {
+  res <- replicate(N, exp.exam())
+  sum(res >= 5) / N
+}
+
+prob.exam(num_trials)
