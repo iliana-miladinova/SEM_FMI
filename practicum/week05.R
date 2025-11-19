@@ -1,7 +1,7 @@
 #task33
 samples <- rexp(500, 1/7)  
 hist(samples, probability=TRUE)
-curve(dexp(x, 1/7), from=0, to=max(sample), add=TRUE, lwd=1)
+curve(dexp(x, 1/7), from=0, to=max(samples), add=TRUE, lwd=1)
 
 
 
